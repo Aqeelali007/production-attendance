@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./styles.css">
+    <title>Attendace details</title>
+</head>
+<body>
+
+    <div class="">
+        <div class="top" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <h1>Attendace simplified for <span style="color: rgb(2, 211, 252); display: flex; justify-content: center; flex-wrap: wrap;">VNR students</span></h1>    
+            <div id="attendance-data" style=" color: #cdd0d5;">
+                
+            </div>
+            <div id="bunkData" style="color: #1f2937; font-size: x-large; display: flex; justify-content: center;">
+                
+            </div>
+
+            <div id="overlay" style="display:none;"></div>
+
+            <div id="loading" style="display:none;">
+                <img src="./loading gif.gif" class="load" alt="">
+            </div>
+            <div style="font-size: x-large; color: red;">Reload to update attendance</div>
+            <form action="/logout" method="POST">
+                <button id="submit" type="submit">Logout</button>
+            </form>
+            <!-- <input type="submit" id="submit" value="update-attendance"> -->
+            <!-- <h3>give your *eduprime* details below</h3> -->
+        </div>
+        
+        <!-- <div class="bottom">
+            <input type="text" placeholder="username (eduprime)">
+            <input type="text" placeholder="password (eduprime)">
+            <input type="submit" placeholder="login">
+        </div> -->
+    </div>
+    <script src="./home.js">
+    </script>
+</body>
+</html>

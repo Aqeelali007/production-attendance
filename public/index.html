@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Attendance simplified for <span style="color: rgb(2, 211, 252);">VNR</span> students</h1>    
+            <h2>No need to login again and again anymore <h3>(Get number of classes you can bunk as well <span>&#128521;</span>)</h2>
+            <div id="invalid" style="color: red;"></div>        
+        </div>
+        <div class="bottom">
+            <input type="text" name="username" id="username" placeholder="username (eduprime)">
+            <input type="password" name="password" id="password" placeholder="password (eduprime)">            
+            <input type="submit" id="submit" value="login">
+        </div>
+        
+        <!-- Add this div for the loading GIF -->
+        <div id="overlay" style="display:none;"></div>
+
+        <div id="loading" style="display:none;">
+            <img src="./loading gif.gif" class="load" alt="">
+        </div>
+
+        <div id="invalid" style="color: red;">
+
+        </div>
+    </div>
+    <script src="./client.js"></script>
+</body>
+</html>
