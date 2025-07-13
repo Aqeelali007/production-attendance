@@ -23,10 +23,38 @@
             <div id="loading" style="display:none;">
                 <img src="./loading gif.gif" class="load" alt="">
             </div>
-            <div style="font-size: x-large; color: red;">Reload to update attendance</div>
-            <form action="/logout" method="POST">
-                <button id="submit" type="submit">Logout</button>
-            </form>
+            <h2>Enter number of classes u want to bunk today</h2>
+            <input
+                type="text"
+                id="box"
+                placeholder="Enter your text here"
+                style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; outline: none; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); color: #999;"
+                onfocus="this.style.color='#333'"
+                onblur="this.style.color='#999'"
+                >
+
+            <h2>Enter total number of classes today</h2>
+            <input
+                type="text"
+                id="box1"
+                placeholder="Enter your text here"
+                style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; outline: none; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); color: #999;"
+                onfocus="this.style.color='#333'"
+                onblur="this.style.color='#999'"
+                >
+
+            <div id="custom" style="color: #1f2937; font-size: x-large; display: flex; justify-content: center;">
+            
+            </div>
+
+
+            <div style="font-size: x-large; color: rgb(224, 0, 0);">RELOAD TO UPDATE ATTENDANCE</div>
+            <div class="butns">
+                <button id="submit" class="customBtn">Submit</button>
+                <form action="/logout" method="POST">
+                    <button id="submit" type="submit">Logout</button>
+                </form>
+            </div>
             <!-- <input type="submit" id="submit" value="update-attendance"> -->
             <!-- <h3>give your *eduprime* details below</h3> -->
         </div>
