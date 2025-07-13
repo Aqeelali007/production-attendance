@@ -29,7 +29,7 @@ app.use(cookieParser());
 // Serve static files from the root directory
 // console.log(path.join(__dirname, 'login.html'));
 const browserURLs = [
-  'http://localhost:8080',
+  'http://localhost:9222',
   'http://localhost:9223',
   'http://localhost:9224',
   'http://localhost:9225',
